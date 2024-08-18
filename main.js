@@ -247,7 +247,7 @@ submit.addEventListener('click', () => {
             })
         })
     })
-    if(JSON.parse(window.localStorage.getItem('guessCount')) == 8) {
+    if(JSON.parse(window.localStorage.getItem('guessCount')) == 7) {
         gameEnd(false)
         console.log('hello')
     } else {
