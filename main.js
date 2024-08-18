@@ -63,6 +63,7 @@ async function makeRow(trackName, trackNo, streams, features, album) {
                         albumDir.textContent = ' ↑'
                     } else {
                         albumDir.textContent = '='
+                        albumDir.style.color = '#3da03d'
                     }
 
                     if (numStringToNum(streams) > numStringToNum(song.streams)) {
@@ -71,6 +72,7 @@ async function makeRow(trackName, trackNo, streams, features, album) {
                         streamsDir.textContent = ' ↑'
                     } else {
                         streamsDir.textContent = '='
+                        streamsDir.style.color = '#3da03d'
                     }
 
                     if (numStringToNum(trackNo) > numStringToNum(song.trackNo)) {
@@ -79,6 +81,7 @@ async function makeRow(trackName, trackNo, streams, features, album) {
                         trackNoDir.textContent = ' ↑'
                     } else {
                         trackNoDir.textContent = '='
+                        trackNoDir.style.color = '#3da03d'
                     }
 
                     tNo.appendChild(trackNoDir)
