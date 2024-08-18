@@ -51,7 +51,6 @@ async function makeRow(trackName, trackNo, streams, features, album) {
         Object.keys(data).forEach((albumA) => {
             data[albumA].forEach((song) => {
                 if(song.trackName == yeSong) { 
-                    console.log('actual: trackNo ' + song.trackNo, 'streams ' + song.streams)
                     const albumDir = document.createElement('h1')
                     albumDir.classList.add('arrow')
                     const streamsDir = document.createElement('span')
@@ -74,9 +73,9 @@ async function makeRow(trackName, trackNo, streams, features, album) {
                         streamsDir.textContent = '='
                     }
 
-                    if (trackNo > song.trackNo) {
+                    if (numStringToNum(trackNo) > numStringToNum(song.trackNo)) {
                         trackNoDir.textContent = ' ↓'
-                    } else if (trackNo < song.trackNo) {
+                    } else if (numStringToNum(trackNo) < numStringToNum(song.trackNo)) {
                         trackNoDir.textContent = ' ↑'
                     } else {
                         trackNoDir.textContent = '='
