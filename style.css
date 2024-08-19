@@ -32,7 +32,7 @@ body {
     position: absolute;
     width: 100vw;
     height: 100vh;
-    background-image: radial-gradient(circle, #445472, #181c25);
+    background-image: radial-gradient(circle, #641e28, #250a0a);
 }
 
 #guess {
@@ -83,7 +83,7 @@ body {
     grid-template-columns: 10% 3% 35% 10% 15% 25%;
     grid-template-rows: 100%;
     grid-column: 1/6;
-    background-color: #222834;
+    background-color: #202020;
     border-bottom: solid 1px #c2830d;
 }
 
@@ -159,7 +159,7 @@ span {
     /* grid-column: 1/4; */
     justify-self: center;
     grid-row: 3;
-    background-color: #222834;
+    background-color: #202020;
     border: solid 1px #c2830d;
     display: grid;
     grid-template-rows: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5%;
@@ -435,7 +435,7 @@ span {
     grid-row: 2;
     width: 30%;
     height: 100%;
-    background-color: #181c25;
+    background-color: #202020;
     opacity: 100;
     z-index: 6;
     display: grid;
